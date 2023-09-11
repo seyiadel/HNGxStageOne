@@ -22,8 +22,8 @@ if($method = "GET"){
             'current_day' => date('l'),
             'utc_time' => date("Y-m-d H:i:s"),
             'track' => "backend",
-            'github_file_url' => '',
-            'github_repo_url' => '',
+            'github_file_url' => 'https://github.com/seyiadel/HNGxStageOne/blob/main/api.php',
+            'github_repo_url' => 'https://github.com/seyiadel/HNGxStageOne',
             'status_code' => 200
 
         ]
