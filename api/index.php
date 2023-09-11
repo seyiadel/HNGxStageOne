@@ -12,8 +12,6 @@ $requested_track = $_GET['track'];
 
 if($method = "GET"){
 
-    // Set Timezone to UTC +1:00
-    date_default_timezone_set("Africa/Lagos");
 
     //JSON representation of participant details
     $body = [
