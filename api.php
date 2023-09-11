@@ -39,6 +39,7 @@ if($method = "GET"){
     if ($requested_slack_name == $slack_name && $requested_track == $track){
         echo $jsonBody;
     }else{
-        echo "Incorrect Credentials";
+        $err = json_encode(['data' => "Incorrect Credentials"]);
+        echo $err;
     }
 }
