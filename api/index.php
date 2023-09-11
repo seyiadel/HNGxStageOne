@@ -17,7 +17,6 @@ if($method = "GET"){
 
     //JSON representation of participant details
     $body = [
-        'data' => [
             'slack_name' =>  "seyiadel",
             'current_day' => date('l'),
             'utc_time' => date("Y-m-d H:i:s"),
@@ -25,15 +24,13 @@ if($method = "GET"){
             'github_file_url' => 'https://github.com/seyiadel/HNGxStageOne/blob/main/api.php',
             'github_repo_url' => 'https://github.com/seyiadel/HNGxStageOne',
             'status_code' => 200
-
-        ]
         ];
 
     // Parse Array to JSON
     $jsonBody = json_encode($body);
 
-    $slack_name = $body['data']['slack_name'];
-    $track = $body['data']['track'];
+    $slack_name = $body['slack_name'];
+    $track = $body['track'];
 
     // Validate Query Parameters
     if ($requested_slack_name == $slack_name && $requested_track == $track){
